@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCK - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 헤더 스타일 */
+        .header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .header nav ul li a:hover {
+            color: #555;
+        }
+
+        /* 메인 콘텐츠 스타일 */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .post {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .post header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .username {
+            font-weight: bold;
+        }
+
+        .post-image img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .post-actions {
+            margin-bottom: 10px;
+        }
+
+        .post-actions button {
+            background-color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .post-actions button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .likes {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comments {
+            margin-bottom: 10px;
+        }
+
+        .comment {
+            margin-bottom: 5px;
+        }
+
+        .comment strong {
+            font-weight: bold;
+        }
+
+        /* 푸터 스타일 */
+        .footer {
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .footer ul li a:hover {
+            color: #333;
+        }
+
+        .footer span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* 이미지 업로드 폼 스타일 */
+        .upload-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .upload-form input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .upload-form button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .upload-form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>ASK</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">탐색하기</a></li>
+                    <li><a href="#">게시물 만들기</a></li>
+                    <li><a href="#">알림</a></li>
+                    <li><a href="#">프로필</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="content">
+            <article class="post">
+                <header>
+                    <div class="user-info">
+                        <img src="profile.jpg" alt="프로필 사진">
+                        <div class="username">윤영록</div>
+                    </div>
+                    <button>팔로우</button>
+                </header>
+                <div class="post-image">
+                    <img src="post.jpg" alt="게시물 사진">
+                </div>
+                <footer>
+                    <div class="post-actions">
+                        <button>좋아요</button>
+                        <button>댓글</button>
+                        <button>공유</button>
+                    </div>
+                    <div class="likes">좋아요 0개</div>
+                    <div class="comments">
+                        <div class="comment">
+                            <strong>댓글 작성자:</strong> 댓글 내용
+                        </div>
+                        <!-- 다른 댓글들 -->
+                    </div>
+                </footer>
+            </article>
+            <!-- 다른 게시물들 -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">도움말</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">채용 정보</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">약관</a></li>
+                <li><a href="#">위치</a></li>
+                <li><a href="#">인기 계정</a></li>
+                <li><a href="#">해시태그</a></li>
+                <li><a href="#">언어</a></li>
+            </ul>
+            <span>&copy; 이성빈. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- 이미지 업로드 폼 -->
+    <div class="container upload-form">
+        <h2>이미지 업로드</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <br>
+            <button type="submit">업로드</button>
+        </form>
+    </div>
+</body>
+</html>
