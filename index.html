@@ -221,9 +221,18 @@
                 <header>
                     <div class="user-info">
                         <img src="profile.jpg" alt="프로필 사진">
-                        <div class="username">윤영록</div>
+                        <div class="username">일산장신들들</div>
                     </div>
                     <button>팔로우</button>
+                  <!-- 이미지 업로드 폼 -->
+    <div class="container upload-form">
+        <h2>이미지 업로드</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <br>
+            <button type="submit">업로드</button>
+        </form>
+    </div>
                 </header>
                 <div class="post-image">
                     <img src="post.jpg" alt="게시물 사진">
@@ -266,14 +275,6 @@
         </div>
     </footer>
 
-    <!-- 이미지 업로드 폼 -->
-    <div class="container upload-form">
-        <h2>이미지 업로드</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" accept="image/*">
-            <br>
-            <button type="submit">업로드</button>
-        </form>
-    </div>
+  
 </body>
 </html>
